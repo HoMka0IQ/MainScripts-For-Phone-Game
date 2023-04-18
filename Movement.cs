@@ -12,9 +12,6 @@ public class Movement : MonoBehaviour
     [SerializeField] float verticalSpeed = -1f;
 
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
-    [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.3f;
-
-    [SerializeField] bool lockCursor = true;
 
     float velocityY = 0.0f;
 
@@ -27,7 +24,7 @@ public class Movement : MonoBehaviour
     
     public Animator Animator;
     public SpeedValue SpeedValue;
-
+    
     void Start()
     {
         controller = GetComponent<CharacterController>();
